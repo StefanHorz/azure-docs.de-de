@@ -85,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um die Installation und Konfiguration de
         -ResourceGroupName <NameofOResourceGroup> -HybridGroupName <NameofHRWGroup> `
         -SubscriptionId <AzureSubscriptionId> -WorkspaceName <NameOfOMSWorkspace>
 
-4. Sie werden aufgefordert, der Installation von **NuGet** zuzustimmen und sich mit Ihren Azure-Anmeldeinformationen zu authentifizieren.<br><br> ![Ausführen des Skripts „New-OnPremiseHybridWorker“](media/automation-hybrid-runbook-worker/new-onpremisehybridworker-scriptoutput.png)
+.4. Sie werden aufgefordert, der Installation von **NuGet** zuzustimmen und sich mit Ihren Azure-Anmeldeinformationen zu authentifizieren.<br><br> ![Ausführen des Skripts „New-OnPremiseHybridWorker“](media/automation-hybrid-runbook-worker/new-onpremisehybridworker-scriptoutput.png)
 
 5. Nach vollständiger Ausführung des Skripts werden auf dem Blatt „Hybrid Worker-Gruppen“ die neue Gruppe und die Anzahl von Mitgliedern angezeigt. Im Falle einer bereits vorhandenen Gruppe wird die Anzahl der Mitglieder erhöht. Sie können die Gruppe aus der Liste auf dem Blatt **Hybrid Worker-Gruppen** auswählen und dann die Kachel **Hybrid Worker** auswählen. Auf dem Blatt **Hybrid Worker** werden die einzelnen Mitglieder der Gruppe aufgelistet. 
 
@@ -113,7 +113,7 @@ Wenn Sie der Operations Management Suite einen Agent hinzufügen, lädt die Auto
 Öffnen Sie eine PowerShell-Sitzung im Administratormodus, und führen Sie die folgenden Befehle zum Importieren des Moduls aus.
 
     cd "C:\Program Files\Microsoft Monitoring Agent\Agent\AzureAutomation\<version>\HybridRegistration"
-    Import-Module HybridRegistration.psd1
+    Import-Module .\HybridRegistration.psd1
 
 Führen Sie dann das Cmdlet **Add-HybridRunbookWorker** mit der folgenden Syntax aus:
 
